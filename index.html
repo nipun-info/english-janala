@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Janala</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font (Hind Siliguri & poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind and daisy UI cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Tailwind and daisy UI cdn (v-4) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        HindSiliguri: ["Hind Siliguri", "sans-serif"],
+                        Popppins: ["Poppins", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS customization -->
+    <style>
+    </style>
+</head>
+
+<body class="font-poppins ">
+    <!-- ***** Header Section ***** -->
+    <header class=" bg-gray-200 border border-b-2 border-gray-400">
+        <nav class="max-w-screen-xl mx-auto px-8 py-3 flex items-center justify-between flex-col md:flex-row">
+            <!-- brand -->
+            <a href="#" class="flex items-center">
+                <span class="font-semibold text-lg">English</span>
+                <img src="assets/logo.png" alt="">
+                <span class="font-HindSiliguri font-semibold">জানালা</span>
+            </a>
+            <!-- nav-menu -->
+            <div class="flex gap-3">
+                <a href="#faq" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span class="-ml-1 font-semibold">FAQ</span>
+                </a>
+                <a href="#faq" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span class="-ml-1 font-semibold">Learn</span>
+                </a>
+                <a href="#faq" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="-ml-1 font-semibold">Logout</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ***** Main Section ***** -->
+    <main class="min-h-screen"></main>
+
+    <!-- ***** Footer Section ***** -->
+    <footer class="bg-gray-200 border-t-2 border-[#ffebeb] py-10">
+        <div class="max-w-screen-xl mx-auto px-8 flex gap-4 justify-between flex-col md:flex-row md:items-end ">
+            <!-- footer left -->
+            <div class="space-y-1">
+                <!-- brand -->
+                <a href="#" class="flex items-center">
+                    <span class="font-semibold text-lg">English</span>
+                    <img class="inline" src="assets/logo.png" alt="">
+                    <span class="font-HindSiliguri font-semibold text-lg">জানালা</span>
+                </a>
+                <h3 class="font-HindSiliguri text-lg font-semibold">ইংরেজি শিখুন সহজে</h3>
+                <h4 class="">Providing ED-Tech Applications since 2025</h4>
+            </div>
+            <!-- footer right -->
+             <div class="space-y-1">
+                <h3 class="text-sm font-semibold ">Follow Us</h3>
+                <div class="space-x-1">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+             </div>
+        </div>
+    </footer>
+</body>
+
+</html>
