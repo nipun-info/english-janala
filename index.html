@@ -47,39 +47,137 @@
     </style>
 </head>
 
-<body class="font-poppins ">
+<body class="font-poppins">
     <!-- ***** Header Section ***** -->
-    <header class=" bg-gray-200 border border-b-2 border-gray-400">
-        <nav class="max-w-screen-xl mx-auto px-8 py-3 flex items-center justify-between flex-col md:flex-row">
-            <!-- brand -->
-            <a href="#" class="flex items-center">
-                <span class="font-semibold text-lg">English</span>
-                <img src="assets/logo.png" alt="">
-                <span class="font-HindSiliguri font-semibold">জানালা</span>
-            </a>
-            <!-- nav-menu -->
-            <div class="flex gap-3">
-                <a href="#faq" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
-                    <i class="fa-solid fa-circle-question"></i>
-                    <span class="-ml-1 font-semibold">FAQ</span>
+    <header class="">
+        <nav class="bg-gray-200 border border-b-2 border-gray-400">
+            <div class="container mx-auto px-8 py-3 flex items-center justify-between flex-col md:flex-row">
+                <!-- brand -->
+                <a href="#" class="flex items-center">
+                    <span class="font-semibold text-lg">English</span>
+                    <img src="assets/logo.png" alt="">
+                    <span class="font-HindSiliguri font-semibold">জানালা</span>
                 </a>
-                <a href="#faq" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
-                    <i class="fa-solid fa-book-open"></i>
-                    <span class="-ml-1 font-semibold">Learn</span>
-                </a>
-                <a href="#faq" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <span class="-ml-1 font-semibold">Logout</span>
-                </a>
+                <!-- nav-menu -->
+                <div class="flex gap-3">
+                    <a href="#faq-section" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span class="-ml-1 font-semibold">FAQ</span>
+                    </a>
+                    <a href="#learn-section" class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span class="-ml-1 font-semibold">Learn</span>
+                    </a>
+                    <button class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="-ml-1 font-semibold">Logout</span>
+                    </button>
+                </div>
             </div>
         </nav>
+
+        <!-- hero section -->
+        <div id="hero-section" class="container mx-auto px-8 py-20 flex gap-5 items-center justify-between flex-col md:flex-row">
+            <!-- hero left content -->
+            <div class="space-y-5 w-full md:w-[50%] ">
+                <h1 class="text-3xl font-bold">
+                    <span class="text-blue-400">English</span> is Easy!!
+                </h1>
+                <p class="font-HindSiliguri text-lg mt-5">
+                    আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                    Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                </p>
+                <form class="w-[70%] space-y-4">
+                    <div class="form-control">
+                        <input id="user_name" type="text" value="nipun" placeholder="Enter Your Name" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                        <input id="user_password" type="password" placeholder="password" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6 w-[50%]">
+                        <button id="get-started-btn" class="btn btn-primary">Get Started</button>
+                    </div>
+                </form>
+            </div>
+            <!-- hero image -->
+            <div class="w-full md:w-[50%]">
+                <img src="assets/hero-student.png" alt="">
+            </div>
+        </div>
     </header>
 
     <!-- ***** Main Section ***** -->
-    <main class="min-h-screen"></main>
+    <main id="main-section" class="min-h-screen ">
+        <!-- Learn Vocabularies section -->
+        <section id="learn-section" class="container mx-auto px-8 py-24">
+            <div>
+                <h2 class="text-2xl font-bold text-center mb-3">
+                    <span class="text-blue-500">Let's</span> Learn Vocabularies
+                </h2>
+                <div id="lesson-container" class="flex justify-center gap-5">
+                    <!-- <button class="btn btn-sm btn-outline text-[#422ad5] text-sm rounded-sm ">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span class="-ml-1 font-semibold">Lesson-1</span>
+                    </button>                     -->
+                </div>
+            </div>
+            <div class="bg-gray-200 text-center rounded-xl py-12 mt-5">
+                <span class="text-sm">আপনি এখনো কোন Lesson Select করেন ন</span>
+                <h3 class="text-2xl font-bold mt-2">একটি Lesson Select করুন।</h3>
+            </div>
+        </section>
+
+        <!-- FAQ section -->
+        <section id="faq-section" class="container mx-auto px-8 py-24">
+            <div>
+                <h2 class="text-2xl font-bold text-center mb-3">
+                    <span class="text-blue-500">Frequently</span> Asked Questions
+                </h2>
+            </div>
+
+            <!-- accordion -->
+            <div>
+                <div class="collapse collapse-plus bg-gray-100 rounded-xl mt-4">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">1. Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 rounded-xl mt-4">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">2. Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 rounded-xl mt-4">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">3. Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 rounded-xl mt-4">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">4. Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 rounded-xl mt-4">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">5. Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- ***** Footer Section ***** -->
-    <footer class="bg-gray-200 border-t-2 border-[#ffebeb] py-10">
+    <footer class="bg-gray-200 border-t-2 border-[#ffebeb] py-10 mt-24">
         <div class="max-w-screen-xl mx-auto px-8 flex gap-4 justify-between flex-col md:flex-row md:items-end ">
             <!-- footer left -->
             <div class="space-y-1">
@@ -93,16 +191,21 @@
                 <h4 class="">Providing ED-Tech Applications since 2025</h4>
             </div>
             <!-- footer right -->
-             <div class="space-y-1">
+            <div class="space-y-1">
                 <h3 class="text-sm font-semibold ">Follow Us</h3>
                 <div class="space-x-1">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-             </div>
+            </div>
         </div>
     </footer>
+
+    <!-- script -->
+     <script src="script/utility.js"></script>
+     <script src="script/index.js"></script>
+     
 </body>
 
 </html>
